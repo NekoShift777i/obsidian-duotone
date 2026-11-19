@@ -1,1 +1,1 @@
-# obsidian-lina-and-yuna-theme
+# Lina And Yuna Theme
