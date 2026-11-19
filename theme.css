@@ -1,0 +1,530 @@
+/* =========================================================
+   Lina and Yuna Theme
+   ========================================================= */
+
+/* =========================================================
+    Functional
+    ======================================================== */
+
+/* Markdown Headers */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .HyperMD-header {
+    text-align: center;
+}
+
+/* Inline title */
+.inline-title {
+    text-align: center;
+}
+
+/* image centering */
+.markdown-rendered p:has(.image-embed) {
+    text-align: center;
+}
+
+.markdown-rendered .image-embed {
+    display: inline-block;
+}
+
+.markdown-rendered .image-embed img {
+    display: inline-block;
+}
+
+/* =========================================================
+    Theme Palette
+    ========================================================= */
+
+/* =========================================================
+    Lina Light Mode
+    ========================================================= */
+
+.theme-light {
+    /* Backgrounds */
+    --background-primary: #f3ebf7; /* Example: Editor and settings; default: #f3ebf7 */
+    --background-primary-alt: #e3ceee; /* Example: groups of settings; default: #e3ceee */
+    --background-secondary: #d5b7e6; /* Example: sidebars and window title; default: #d5b7e6 */
+    --background-secondary-alt: #a68eb3; /* Example: window title; default: #a68eb3 */
+
+    /* Text */
+    --text-normal: #3a1c4c; /* Example: normal text in editor; Default: #3a1c4c */
+    --text-muted: #7b6887; /* Example: The text of the tabs and the sidebar menu icons; Default: #7b6887 */
+    --text-faint: #a68eb3; /* Example: Highlighting of Markdown syntax, line numbers, and some menu icons; Default: #a68eb3 */
+
+    /* Interactive accent */
+    --interactive-accent: #228b66; /* Example: Border emphasis when hovering the mouse to change the size and sliders; Default: #228b66 */
+    --interactive-accent-hover: #124b37; /* The variable assignment has not been confirmed; default: #124b37 */ 
+
+    /* Links */
+    --link-color: #228b66; /* Used for: links in notes (editor and view mode); default: #228b66 */
+    --link-color-hover: #124b37; /* Used for: Link highlighting when hovering the mouse cursor over them; default: #124b37 */
+    --link-external-color: #228b66; /* Used for: External links (for example, to a website) in the notes; default: #228b66 */
+    --link-external-color-hover: #124b37; /* Used for: Highlighting of external links (for example, websites) when hovering the mouse; default: #124b37 */
+
+    /* Borders */
+    --background-modifier-border: #228b66; /* Used for: The boundaries between the sidebars and the editor; default: #228b66 */
+}
+
+.theme-light {
+    /* Selection */
+    --text-selection: rgba(195, 240, 224, 0.65); /* Used for: Highlighting text in the editor and other places */
+
+    /* Hover / interactive surfaces */
+    --background-modifier-hover: #e3ceee; /* Example: Menu buttons with icons */
+    --background-modifier-active-hover: #d5b7e6; /* Example: Menu buttons with icons */
+
+    /* Form elements */
+    --background-modifier-form-field: #f8f4fa; /* Example: Searching forms */
+    --background-modifier-form-field-highlighted: #e3ceee; /* The variable assignment has not been confirmed; default: #e3ceee */
+
+    /* Focus */
+    --background-modifier-border-focus: #228b66; /* Used for: the boundaries of the shapes in focus; default: #228b66 */
+
+    /* Error / success can remain Obsidian defaults for now */
+}
+
+/* =========================================================
+   Lina — Headings
+   ========================================================= */
+
+.theme-light {
+    --h1-color: #7b4e94; /* Used for: First‑level heading; default: #7b4e94 */
+    --h2-color: #228b66; /* Used for: Second‑level heading; default: #228b66 */
+    --h3-color: #9b6eb5; /* Used for: Third‑level heading; default: #9b6eb5 */
+    --h4-color: #3a1c4c; /* Used for: Fourth‑level heading; default: #3a1c4c */
+    --h5-color: #7b6887; /* Used for: Level5 heading; default: #7b6887 */
+    --h6-color: #5a3370; /* Used for: Level6 heading; default: #5a3370 */
+}
+
+/* =========================================================
+   Lina — Code
+   ========================================================= */
+
+.theme-light {
+    /* Inline code */
+    --code-background: #e3ceee; /* Used for: The background of code blocks and inline code; default: #e3ceee */
+    --code-normal: #5a3370; /* Used for: Default code text; default: #5a3370 */
+
+    /* Code blocks */
+    --code-comment: #7b6887; /* Used for: code comments; default: #7b6887 */
+    --code-function: #7b4e94; /* Used for: Function names; default: #7b4e94 */
+    --code-important: #5a3370; /* Used for: important code elements; default: #5a3370 */
+    --code-keyword: #228b66; /* Used for: code Keywords; default: #228b66 */
+    --code-operator: #7b4e94; /* Used for: code operators; default: #7b4e94 */
+    --code-property: #5a3370; /* Used for: code properties; default: #5a3370 */
+    --code-punctuation: #7b6887; /* Used for: code punctuation; default: #7b6887 */
+    --code-string: #227a5c; /* Used for: code strings; default: #227a5c */
+    --code-tag: #7b4e94; /* Used for: code tags; default: #7b4e94 */
+    --code-value: #228b66; /* Used for: code values; default: #228b66 */
+}
+
+/* =========================================================
+   Lina — Tags
+   ========================================================= */
+
+.theme-light {
+    --tag-color: #5a3370; /* Used for: tag text; default: #5a3370 */
+    --tag-background: #d5b7e6; /* Used for: tag background; default: #d5b7e6 */
+
+    --tag-color-hover: #3a1c4c; /* Used for: tag text when hovering with the mouse; default: #3a1c4c */
+    --tag-background-hover: #c3f0e0; /* Used for: tag background when hovering with the mouse; default: #c3f0e0 */
+
+    --tag-border-color: #b993cf; /* The variable assignment has not been confirmed; default: #b993cf */
+    --tag-border-color-hover: #228b66; /* The variable assignment has not been confirmed; default: #228b66 */
+}
+
+/* =========================================================
+   Lina — Checkboxes
+   ========================================================= */
+
+.theme-light {
+    --checkbox-color: #228b66; /* Used for: Completed checkboxes; default: #228b66 */
+    --checkbox-color-hover: #124b37; /* Used for: Completed checkboxes when hovering mouse cursor; default: #124b37 */
+    --checkbox-border-color: #a68eb3; /* Used for: boundaries of unchecked checkboxes; default: #a68eb3 */
+    --checkbox-border-color-hover: #228B66; /* */
+
+    --checklist-done-color: #7B6887;
+}
+
+/* =========================================================
+   Lina — Callouts
+   ========================================================= */
+
+.theme-light {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.35;
+    --callout-title-color: #3A1C4C;
+}
+
+/* =========================================================
+   Lina — Buttons & Form Fields
+   ========================================================= */
+
+.theme-light {
+    /* Buttons */
+    --interactive-normal: #E3CEEE;
+    --interactive-hover: #d5b7e6;
+    
+    /* Caret */
+    --caret-color: #228B66;
+}
+
+/* =========================================================
+   Lina — Scrollbar
+   ========================================================= */
+
+.theme-light {
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: #D5B7E6;
+    --scrollbar-active-thumb-bg: #B993CF;
+}
+
+/* =========================================================
+   Lina — Navigation
+   ========================================================= */
+
+.theme-light {
+    --nav-item-color: #5A3370;
+    --nav-item-color-hover: #3A1C4C;
+    --nav-item-color-active: #3A1C4C;
+
+    --nav-item-background-hover: rgba(227, 206, 238, 0.27);
+    --nav-item-background-active: rgba(213, 183, 230, 0.27);
+
+    --nav-item-weight-active: 600;
+}
+
+/* =========================================================
+   Lina — File Tree
+   ========================================================= */
+
+.theme-light {
+    --nav-indentation-guide-color: #B993CF;
+}
+
+.theme-light {
+    /* Graph */
+    --graph-line: #A9CFC4;
+    --graph-node: #A68EB3;
+    --graph-node-unresolved: #B993CF;
+    --graph-node-focused: #228B66;
+    --graph-node-tag: #7B4E94;
+    --graph-node-attachment: #9B6EB5;
+}
+
+/* =========================================================
+   Lina — Additional interface variables (parity with Yuna)
+   Added without replacing the existing light palette.
+   ========================================================= */
+
+/* Tabs */
+.theme-light {
+    --tab-text-color: #7b6887;
+    --tab-text-color-focused: #5a3370;
+    --tab-text-color-focused-active: #3a1c4c;
+    --tab-text-color-focused-active-current: #3a1c4c;
+    --tab-container-background: #e3ceee;
+    --tab-divider-color: #b993cf;
+    --tab-outline-color: #b993cf;
+}
+
+/* Search and inputs */
+.theme-light {
+    --input-shadow: 0 0 0 1px rgba(166, 142, 179, 0.55);
+    --input-shadow-hover: 0 0 0 1px rgba(34, 139, 102, 0.35);
+    --input-shadow-focus: 0 0 0 2px rgba(34, 139, 102, 0.45);
+    --search-result-background: rgba(34, 139, 102, 0.10);
+}
+
+/* Workspace dividers */
+.theme-light {
+    --divider-color: #b993cf;
+    --divider-color-hover: #228b66;
+    --divider-width: 1px;
+    --background-modifier-border-hover: rgba(34, 139, 102, 0.55);
+}
+
+/* Navigation and menus */
+.theme-light {
+    --background-modifier-message: #e3ceee;
+    --nav-item-color-selected: #3a1c4c;
+    --nav-item-background-selected: rgba(213, 183, 230, 0.35);
+}
+
+/* Dialogs and tooltips */
+.theme-light {
+    --modal-background: #f3ebf7;
+    --modal-border-color: #b993cf;
+    --prompt-border-color: #b993cf;
+    --tooltip-bg: #d5b7e6;
+    --tooltip-text-color: #3a1c4c;
+}
+
+/* Search highlighting */
+.theme-light {
+    --text-highlight-bg: rgba(34, 139, 102, 0.20);
+    --text-highlight-bg-active: rgba(34, 139, 102, 0.34);
+}
+
+/* Quotes and separators */
+.theme-light {
+    --blockquote-border-color: #228b66;
+    --blockquote-color: #5a3370;
+    --blockquote-background-color: rgba(34, 139, 102, 0.06);
+    --hr-color: #b993cf;
+}
+
+/* Lists */
+.theme-light {
+    --list-marker-color: #a68eb3;
+    --list-marker-color-hover: #228b66;
+    --list-marker-color-collapsed: #7b4e94;
+}
+
+/* Internal links */
+.theme-light {
+    --link-unresolved-color: #a68eb3;
+    --link-unresolved-opacity: 0.75;
+    --link-unresolved-filter: none;
+    --link-unresolved-decoration-color: rgba(166, 142, 179, 0.65);
+    --link-unresolved-decoration-style: dashed;
+    --link-decoration: none;
+    --link-decoration-hover: underline;
+}
+
+/* Tables */
+.theme-light {
+    --table-background: #f3ebf7;
+    --table-border-color: #b993cf;
+    --table-header-background: #e3ceee;
+    --table-header-background-hover: rgba(34, 139, 102, 0.12);
+    --table-row-background-hover: rgba(34, 139, 102, 0.08);
+    --table-text-color: #3a1c4c;
+    --table-header-color: #7b4e94;
+}
+
+/* =========================================================
+   Yuna — Dark Mode
+   ========================================================= */
+
+.theme-dark {
+    /* Backgrounds */
+    --background-primary: #10141C;
+    --background-primary-alt: #151B26;
+    --background-secondary: #1B2330;
+    --background-secondary-alt: #263244;
+
+    /* Text */
+    --text-normal: #DCE8F5;
+    --text-muted: #91A4B8;
+    --text-faint: #60758A;
+
+    /* Accent */
+    --interactive-accent: #4DA6FF;
+    --interactive-accent-hover: #78BCFF;
+
+    /* Links */
+    --link-color: #5EB1FF;
+    --link-color-hover: #8AC8FF;
+    --link-external-color: #5EB1FF;
+    --link-external-color-hover: #8AC8FF;
+
+    /* Borders */
+    --background-modifier-border: #30465E;
+}
+
+.theme-dark {
+    /* Selection */
+    --text-selection: rgba(77, 166, 255, 0.28);
+
+    /* Hover / Active */
+    --background-modifier-hover: rgba(77, 166, 255, 0.27);
+    --background-modifier-active-hover: rgba(77, 166, 255, 0.35);
+
+    /* Form fields */
+    --background-modifier-form-field: #151B26;
+    --background-modifier-form-field-highlighted: rgba(77, 166, 255, 0.12);
+
+    /* Focus */
+    --background-modifier-border-focus: #4DA6FF;
+}
+
+.theme-dark {
+    /* Headings */
+    --h1-color: #78BCFF;
+    --h2-color: #4DA6FF;
+    --h3-color: #6F9FD1;
+    --h4-color: #DCE8F5;
+    --h5-color: #91A4B8;
+    --h6-color: #607F9F;
+}
+
+.theme-dark {
+    /* Code */
+    --code-background: #151B26;
+    --code-normal: #B8CCE0;
+    --code-comment: #60758A;
+    --code-function: #78BCFF;
+    --code-important: #DCE8F5;
+    --code-keyword: #4DA6FF;
+    --code-operator: #91A4B8;
+    --code-property: #6F9FD1;
+    --code-punctuation: #607F9F;
+    --code-string: #72C7D9;
+    --code-tag: #78BCFF;
+    --code-value: #5EB1FF;
+}
+
+.theme-dark {
+    /* Tags */
+    --tag-color: #78BCFF;
+    --tag-background: rgba(77, 166, 255, 0.14);
+
+    --tag-color-hover: #DCE8F5;
+    --tag-background-hover: rgba(77, 166, 255, 0.24);
+
+    --tag-border-color: #30465E;
+    --tag-border-color-hover: #4DA6FF;
+}
+
+.theme-dark {
+    /* Checkboxes */
+    --checkbox-color: #4DA6FF;
+    --checkbox-color-hover: #78BCFF;
+
+    --checkbox-border-color: #60758A;
+    --checkbox-border-color-hover: #4DA6FF;
+
+    --checklist-done-color: #91A4B8;
+}
+
+.theme-dark {
+    --interactive-normal: #1B2330;
+    --interactive-hover: rgba(77, 166, 255, 0.12);
+    --caret-color: #4DA6FF;
+}
+
+.theme-dark {
+    /* Tabs */
+    --tab-text-color: #91A4B8;
+    --tab-text-color-focused: #B8CCE0;
+    --tab-text-color-focused-active: #DCE8F5;
+    --tab-text-color-focused-active-current: #DCE8F5;
+
+    --tab-container-background: #151B26;
+    --tab-divider-color: #30465E;
+    --tab-outline-color: #30465E;
+}
+
+.theme-dark {
+    /* Search & input fields */
+    --input-shadow: 0 0 0 1px rgba(48, 70, 94, 0.55);
+    --input-shadow-hover: 0 0 0 1px rgba(77, 166, 255, 0.35);
+    --input-shadow-focus: 0 0 0 2px rgba(77, 166, 255, 0.45);
+
+    --search-result-background: rgba(77, 166, 255, 0.10);
+}
+
+.theme-dark {
+    /* Scrollbars */
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(96, 117, 138, 0.35);
+    --scrollbar-active-thumb-bg: rgba(77, 166, 255, 0.55);
+}
+
+.theme-dark {
+    /* Workspace borders & dividers */
+    --divider-color: #30465E;
+    --divider-color-hover: #4DA6FF;
+    --divider-width: 1px;
+
+    --background-modifier-border-hover: rgba(77, 166, 255, 0.55);
+}
+
+.theme-dark {
+    /* Menu's */
+    --background-modifier-message: #1B2330;
+
+    --nav-item-color: #91A4B8;
+    --nav-item-color-hover: #B8CCE0;
+    --nav-item-color-active: #DCE8F5;
+    --nav-item-color-selected: #DCE8F5;
+
+    --nav-item-background-hover: rgba(77, 166, 255, 0.10);
+    --nav-item-background-active: rgba(77, 166, 255, 0.16);
+    --nav-item-background-selected: rgba(77, 166, 255, 0.18);
+}
+
+.theme-dark {
+    /* Modal windows & tooltips */
+    --modal-background: #151B26;
+    --modal-border-color: #30465E;
+
+    --prompt-border-color: #30465E;
+
+    --tooltip-bg: #263244;
+    --tooltip-text-color: #DCE8F5;
+}
+
+.theme-dark {
+    /* Search matches in editor */
+    --text-highlight-bg: rgba(77, 166, 255, 0.20);
+    --text-highlight-bg-active: rgba(120, 188, 255, 0.34);
+}
+
+.theme-dark {
+    /* Blockquotes & horizontal rules */
+    --blockquote-border-color: #4DA6FF;
+    --blockquote-color: #B8CCE0;
+    --blockquote-background-color: rgba(77, 166, 255, 0.06);
+
+    --hr-color: #30465E;
+}
+
+.theme-dark {
+    /* Lists */
+    --list-marker-color: #607F9F;
+    --list-marker-color-hover: #4DA6FF;
+    --list-marker-color-collapsed: #78BCFF;
+}
+
+.theme-dark {
+    /* Internal links */
+    --link-unresolved-color: #607F9F;
+    --link-unresolved-opacity: 0.75;
+    --link-unresolved-filter: none;
+
+    --link-unresolved-decoration-color: rgba(96, 127, 159, 0.65);
+    --link-unresolved-decoration-style: dashed;
+
+    --link-decoration: none;
+    --link-decoration-hover: underline;
+}
+
+.theme-dark {
+    /* Tables */
+    --table-background: #10141C;
+    --table-border-color: #30465E;
+
+    --table-header-background: #1B2330;
+    --table-header-background-hover: rgba(77, 166, 255, 0.12);
+
+    --table-row-background-hover: rgba(77, 166, 255, 0.08);
+
+    --table-text-color: #DCE8F5;
+    --table-header-color: #78BCFF;
+}
+
+.theme-dark {
+    /* Graph */
+    --graph-line: #30465E;
+    --graph-node: #607F9F;
+    --graph-node-focused: #78BCFF;
+    --graph-node-tag: #4DA6FF;
+    --graph-node-attachment: #6F9FD1;
+    --graph-node-unresolved: #40566D;
+}
