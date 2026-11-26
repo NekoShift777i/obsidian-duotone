@@ -1,1 +1,1 @@
-# Lina And Yuna Theme
+# Duotone
